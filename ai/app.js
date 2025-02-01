@@ -290,7 +290,7 @@ app.post("/api/generate-game", async (req, res) => {
       tweet: "https://x.com/EduRobinX/status/" + tweetId,
     });
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error in generating game:", error);
     res.status(500).json({ error: "Failed to generate game" });
   }
 });
